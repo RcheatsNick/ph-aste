@@ -1,65 +1,65 @@
 # Hastebin Plus
-Hastebin Plus is an open-source Pastebin software written in node.js, which is easily installable in any network.  
-It bases upon [haste](https://github.com/seejohnrun/haste-server) and got enhanced in matters of **Design, Speed and Simplicity**.
+Hastebin Plus, herhangi bir ağa kolayca kurulabilen, node.js ile yazılmış açık kaynaklı bir Pastebin yazılımıdır.
+[Aceleye] (https://github.com/seejohnrun/haste-server) dayanır ve ** Tasarım, Hız ve Basitlik ** konularında gelişmiştir.
 
-## Features
-* Paste code, logs and ... almost everything!
-* Syntax-Highlighting
-* Add static documents
-* Duplicate & edit pastes
-* Raw paste-view
+## Özellikleri
+* Kodu, günlükleri ve neredeyse her şeyi yapıştırın!
+* Sözdizimi Vurgulama
+* Statik belgeler ekleyin
+* Kopyaları çoğaltın ve düzenleyin
+* Ham macun görünümü
 
-## Installation
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Snowflake107/HastebinPlus)
+## Kurulum
+[! [Heroku'ya Dağıt] (https://www.herokucdn.com/deploy/button.png)] (https://heroku.com/deploy?template=https://github.com/Snowflake107/HastebinPlus)
 
-1. Install Git and node.js: `sudo apt-get install git nodejs`
-2. Clone this repository: `git clone https://github.com/MarvinMenzerath/HastebinPlus.git hastebin-plus`
-3. Open `config.json` and change the settings (if you want to)
-4. Install dependencies: `npm install`
-5. Start the application: `npm start`
+1. Git ve node.js'yi kurun: `sudo apt-get install git nodejs`
+2. Bu depoyu klonlayın: `git clone https://github.com/MarvinMenzerath/HastebinPlus.git hastebin-plus`
+3. "config.json" dosyasını açın ve ayarları değiştirin (isterseniz)
+4. Bağımlılıkları yükleyin: "npm install"
+5. Uygulamayı başlatın: "npm start"
 
-## Update
-1. Pull changes from this repository: `git pull`
-2. Install new dependencies: `npm install`
+## Güncelleme
+1. Bu depodaki değişiklikleri alın: "git pull`
+2. Yeni bağımlılıkları yükleyin: "npm install`
 
-## Settings
-| Key                    | Description                                     | Default value |
+## Ayarlar
+| Anahtar | Açıklama | Varsayılan değer |
 | ---------------------- | ----------------------------------------------- | ------------- |
-| `host`                 | The host the server runs on                     | `0.0.0.0`     |
-| `port`                 | The port the server runs on                     | `8080`        |
-| `dataPath`             | The directory where all pastes are stored       | `./data`      |
-| `keyLength`            | The length of the pastes' key                   | `10`          |
-| `maxLength`            | Maximum chars in a paste                        | `500000`      |
-| `createKey`            | Needs to be in front of paste to allow creation | ` `           |
-| `documents`            | Static documents to serve                       | See below     |
+| `ana bilgisayar` | Sunucunun çalıştığı ana bilgisayar | `0.0.0.0` |
+| `bağlantı noktası` | Sunucunun çalıştığı bağlantı noktası | `8080` |
+| `dataPath` | Tüm yapıştırmaların depolandığı dizin | ". / veri` |
+| `keyLength` | Macun anahtarının uzunluğu | `10` |
+| `maxLength` | Bir yapıştırmada maksimum karakter | "500000" |
+| `createKey` | Oluşturulmasına izin vermek için yapıştırmanın önünde olması gerekir | '' |
+| `belgeler '| Sunulacak statik belgeler | Aşağıya bakın |
 
-### Default Config
-```json
+### Varsayılan Yapılandırma
+json
 {
-	"host": "0.0.0.0",
-	"port": 8080,
-	"dataPath": "./data",
-	"keyLength": 10,
-	"maxLength": 500000,
-	"createKey": "",
-	"documents": {
-		"about": "./README.md",
-		"javaTest": "./documents/test.java"
-	}
+"ana bilgisayar": "0.0.0.0",
+"bağlantı noktası": 8080,
+"dataPath": "./data",
+"keyLength": 10,
+"maxLength": 500000,
+"createKey": "",
+"belgeler": {
+"about": "./README.md",
+"javaTest": "./documents/test.java"
 }
-```
+}
+''
 
-## Authors
-* [haste](https://github.com/seejohnrun/haste-server): John Crepezzi - MIT License
-* [jQuery](https://github.com/jquery/jquery): MIT License
-* [highlight.js](https://github.com/isagalaev/highlight.js): Ivan Sagalaev - [License](https://github.com/isagalaev/highlight.js/blob/master/LICENSE)
-* [Application Icon](https://www.iconfinder.com/icons/285631/notepad_icon): [Paomedia](https://www.iconfinder.com/paomedia) - [CC BY 3.0 License](http://creativecommons.org/licenses/by/3.0/)
+## Yazarlar
+* [haste] (https://github.com/seejohnrun/haste-server): John Crepezzi - MIT Lisansı
+* [jQuery] (https://github.com/jquery/jquery): MIT Lisansı
+* [vurgulamak.js] (https://github.com/isagalaev/highlight.js): Ivan Sagalaev - [Lisans] (https://github.com/isagalaev/highlight.js/blob/master/LICENSE)
+* [Uygulama Simgesi] (https://www.iconfinder.com/icons/285631/notepad_icon): [Paomedia] (https://www.iconfinder.com/paomedia) - [CC BY 3.0 Lisansı] (http: / /creativecommons.org/licenses/by/3.0/)
 
-## License
-Copyright (c) 2014-2016 Marvin Menzerath
+## Lisans
+Telif Hakkı (c) 2021-2022 Codinator
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+İşbu belge ile, bu yazılımın ve ilgili belge dosyalarının ("Yazılım") bir kopyasını elde eden herhangi bir kişiye, kullanım, kopyalama, değiştirme, birleştirme hakları dahil ancak bunlarla sınırlı olmamak üzere, kısıtlama olmaksızın Yazılım üzerinde işlem yapma izni verilmektedir. Yazılımın kopyalarını yayınlamak, dağıtmak, alt lisansını vermek ve / veya satmak ve Yazılımın sağlandığı kişilere aşağıdaki koşullara tabi olarak izin vermek için:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Yukarıdaki telif hakkı bildirimi ve bu izin bildirimi, Yazılımın tüm kopyalarına veya önemli kısımlarına dahil edilecektir.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+YAZILIM, TİCARİ ELVERİŞLİLİK, BELİRLİ BİR AMACA UYGUNLUK VE İHLAL ETMEME GARANTİLERİ DAHİL ANCAK BUNLARLA SINIRLI OLMAMAK ÜZERE AÇIK VEYA ZIMNİ HERHANGİ BİR GARANTİ OLMAKSIZIN "OLDUĞU GİBİ" SAĞLANIR. YAZARLAR VEYA TELİF HAKKI SAHİPLERİ HİÇBİR DURUMDA YAZILIM VEYA KULLANIM YA DA YAZILIMIN KULLANIMI VEYA DİĞER İLİŞKİLERDEN KAYNAKLANAN, SÖZLEŞME, İŞKENCE VEYA BAŞKA BİR DAVA DURUMUNDA HERHANGİ BİR TALEP, ZARAR VEYA DİĞER YÜKÜMLÜLÜKLERDEN SORUMLU OLMAYACAKLARDIR. YAZILIM.
